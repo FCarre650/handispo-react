@@ -11,7 +11,7 @@ function Handispo() {
   return (
     <>
       <Header />
-      <Home />
+        <Home />
       <Footer />
     </>
   )
