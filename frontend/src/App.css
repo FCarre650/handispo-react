@@ -1,0 +1,82 @@
+@media screen and (min-width: 80rem) {
+    body {
+      margin: 1em 2em;
+    }
+}
+
+
+body {
+    background-color: #f0f0f0; 
+    width:80%;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+
+header{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align:left;
+    margin-top: 3px;
+}
+
+.logo {
+  max-height: 200px;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #cb7225aa);
+}
+
+.account {
+    max-height: 100px;
+    margin-top: -25px;;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.account:hover {
+    filter: drop-shadow(0 0 2em #cb7225aa);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  /*Centre les boutons horizontalement */
+    text-align: center;
+    padding: 16px;
+    margin-top: 5px;
+}
+
+.accueil, .liste, .carte, .catalogue, .aide {
+    height: 30px;
+    width: 30px;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.accueil:hover,
+.liste:hover,
+.carte:hover,
+.catalogue:hover,
+.aide:hover {
+    filter: drop-shadow(0 0 2em #cb7225aa);
+}
+
+.presentation{
+    text-align: left;
+    height: 170px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 5px;
+   
+}
+
+
+  
+
+
