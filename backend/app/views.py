@@ -5,3 +5,5 @@ from .serializer import AssociationSerializer
 class AssociationListView(generics.ListCreateAPIView):
     queryset = Association.objects.all()
     serializer_class = AssociationSerializer
+
+    
