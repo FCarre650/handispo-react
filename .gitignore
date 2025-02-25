@@ -5,4 +5,4 @@ backend/backend/__pycache__/
 backend/app/migrations/__pycache__
 *.log
 *.pot
-backend/.env
+backend/backend/.env

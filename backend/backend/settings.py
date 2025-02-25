@@ -32,6 +32,7 @@ DEBUG = os.getenv('DEBUG') #ATTENTION - VARIABLE D'ENVIRONNEMENT
 ALLOWED_HOSTS=[os.getenv('DOMAIN')] #ATTENTION - VARIABLE D'ENVIRONNEMENT
 
 # Application definition
+#
 
 INSTALLED_APPS = [
     'django.contrib.admin',
