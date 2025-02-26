@@ -20,6 +20,6 @@ from app.views import AssociationListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('associations/', AssociationListView.as_view(), name='association-list-create'),
+    path('api/', AssociationListView.as_view(), name='association-list'),
 ]
 
