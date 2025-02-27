@@ -32,7 +32,7 @@ header{
 }
 
 .account {
-    max-height: 100px;
+    max-height: 70px;
     margin-top: -25px;;
     padding: 1.5em;
     will-change: filter;
