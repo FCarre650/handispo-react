@@ -15,3 +15,17 @@ class AssociationSerializer(serializers.ModelSerializer):
                   'website', 
                   'license'
                   ]
+
+class HandicapSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Handicap
+        fields = ['id',
+                  'name', 
+                  ]
+
+class SportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Sport
+        fields = ['id',
+                  'name', 
+                  ]
