@@ -72,10 +72,27 @@ footer{
     text-align: left;
     height: 170px;
     padding: 10px 20px 10px 20px;
-    margin-top: 5px;
-   
+    margin-top: 5px;  
 }
 
+li {
+    list-style: none;
+    border: solid 1px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.button-filter {
+    width: 50%;
+    height: 100px;
+    background-color: #d24b1a;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    
+}
 
   
 

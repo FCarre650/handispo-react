@@ -50,8 +50,8 @@ export default function AssociationList() {
          <Header/>
          <div>
             <h1>Liste des associations</h1>
-            <button onClick={openModal} >
-                Filtres
+            <button className='button-filter' onClick={openModal} >
+                FILTRES
             </button>
             <ModalWindow 
                 isOpen={isModalOpen} 
@@ -60,7 +60,7 @@ export default function AssociationList() {
             <ul>
             {associations.map( association => (
             <li key={association.id}>
-              <p> {association.name} </p>
+              <p><b>{association.name}</b></p>
               <p> {association.address} </p>
               <p> {association.postal_code} {association.city} </p>
               <br/>
