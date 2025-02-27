@@ -1,10 +1,15 @@
 import React from 'react';
 
-
+import Header from './Header'
+import Footer from './Footer'
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
     return (
+        <>
+        <Header/>
+    
         <div>
             <section className='presentation'>
                 <h1>Bienvenue sur Handispo !</h1>
@@ -14,15 +19,19 @@ export default function Home() {
             </section>
 
             <section className="presentation">
-                <div class="bouton_haut">
-                    <button className="btn_catalogue" >CATALOGUE DES SPORTS</button>
-                </div>
-
-                <div class="boutons_bas">
-                    <button className="btn_liste">LISTE DES ASSOCIATIONS</button>
-                    <button className="btn_carte">CARTE</button>        
-                </div>
+                <Link to="/catalog">
+                    <button>CATALOGUE DES SPORTS</button>
+                </Link>
+                <Link to="/associations">
+                    <button>LISTE DES ASSOCIATIONS</button>
+                </Link>
+                <Link to="/map">
+                    <button>CARTE</button>
+                </Link>
             </section>
         </div>
+
+        <Footer/>
+        </>
     );
 }
