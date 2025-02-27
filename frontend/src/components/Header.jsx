@@ -10,15 +10,10 @@ export default function Header() {
         <div className='header'>
             <header>
                 <Link to="/">
-                <a href="home">
                     <img src={logo} alt="logo" className="logo" />
-                </a>
                 </Link>
-                
                 <Link to="/">
-                <a href="login">
                     <img src={account} alt="account" className= "account"/>
-                </a>
                 </Link>
             </header>
         </div>

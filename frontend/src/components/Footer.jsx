@@ -12,33 +12,23 @@ export default function Footer() {
         <div className='footer'>
             <footer>
                 <Link to="/">
-                <a href="accueil">
                     <img src={accueil} alt="accueil" className="accueil" />
-                </a>
                 </Link>
 
                 <Link to="/associations">
-                <a href="liste">
                     <img src={liste} alt="liste" className= "liste"/>
-                </a>
                 </Link>
 
                 <Link to="/map">
-                <a href="carte">
                     <img src={carte} alt="carte" className="carte" />
-                </a>
                 </Link>
 
                 <Link to="/catalog">
-                <a href="catalogue">
                     <img src={catalogue} alt="catalogue" className= "catalogue"/>
-                </a>
                 </Link>
 
                 <Link to="/help">
-                <a href="aide">
                     <img src={aide} alt="aide" className= "aide"/>
-                </a>
                 </Link>
             </footer>
         </div>
