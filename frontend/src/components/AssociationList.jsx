@@ -48,8 +48,7 @@ export default function AssociationList() {
             <li key={association.id}>
               <p> {association.name} </p>
               <p> {association.address} </p>
-              <p> {association.postalCode} </p>
-              <p> {association.city} </p>
+              <p> {association.postal_code} {association.city} </p>
               <br/>
               </li>
             ))}
