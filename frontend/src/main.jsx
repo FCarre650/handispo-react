@@ -6,6 +6,7 @@ import AssociationList from './components/AssociationList';
 
 import './App.css'
 
+Modal.setAppElement('#root');
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
