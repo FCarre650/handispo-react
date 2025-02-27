@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
+import ModalWindow from './ModalWindow';
 
 import Header from './Header'
 import Footer from './Footer'
@@ -11,7 +12,7 @@ export default function AssociationList() {
 
     //state
     const [associations, setAssociations] = useState([])
-    
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     //appel backend pour récupérer la liste des associations
     const ListAsso = async() => {
@@ -35,7 +36,13 @@ export default function AssociationList() {
   
 
     //comportementsAssos
+    const openModal = () => {
+        setIsModalOpen(true)
+    }
 
+    const closeModal = () => {
+        setIsModalOpen(false)
+    }
 
     //affichage
     return (
@@ -43,6 +50,13 @@ export default function AssociationList() {
          <Header/>
          <div>
             <h1>Liste des associations</h1>
+            <button onClick={openModal} >
+                Filtres
+            </button>
+            <ModalWindow 
+                isOpen={isModalOpen} 
+                isClose={closeModal}
+            />
             <ul>
             {associations.map( association => (
             <li key={association.id}>
@@ -55,9 +69,6 @@ export default function AssociationList() {
             </ul>
         </div>
         <Footer/>
-
         </>
-        
-
     );
 }
