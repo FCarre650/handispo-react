@@ -1,6 +1,9 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
 
+import Header from './Header'
+import Footer from './Footer'
+
 
 
 
@@ -36,14 +39,26 @@ export default function AssociationList() {
 
     //affichage
     return (
-        <div>
+        <>
+         <Header/>
+         <div>
             <h1>Liste des associations</h1>
             <ul>
-            {associations.map(association => {
-              <li key={association.id}>{association.name}
+            {associations.map( association => (
+            <li key={association.id}>
+              <p> {association.name} </p>
+              <p> {association.address} </p>
+              <p> {association.postalCode} </p>
+              <p> {association.city} </p>
+              <br/>
               </li>
-            })}
+            ))}
             </ul>
         </div>
+        <Footer/>
+
+        </>
+        
+
     );
 }
