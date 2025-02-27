@@ -15,9 +15,11 @@ export default function Header() {
                 </a>
                 </Link>
                 
+                <Link to="/">
                 <a href="login">
                     <img src={account} alt="account" className= "account"/>
                 </a>
+                </Link>
             </header>
         </div>
     );
