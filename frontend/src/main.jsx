@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home'
 import AssociationList from './components/AssociationList';
+import Modal from 'react-modal';
 
 import './App.css'
 
